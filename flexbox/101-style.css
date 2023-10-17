@@ -1,0 +1,54 @@
+:root {
+    --boxHeight: 3rem;
+    --boxWidth: 5rem;
+    --text-font: 1rem;
+;}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.box {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    background: rgb(62, 180, 62);
+    font-size: var(--text-font);
+    height: var(--boxHeight);
+    width: var(--boxWidth);
+}
+
+.box2 {
+    background: rgb(6, 62, 203);
+    font-size: calc(2 * var(--text-font));
+    height: calc(1.6 * var(--boxHeight));
+    width: calc(1.6 * var(--boxWidth));
+}
+
+.box3 {
+    background: rgb(12, 12, 84);
+    font-size: calc(3 * var(--text-font));
+    height: calc(2.75 * var(--boxHeight));
+    width: calc(2.75 * var(--boxWidth));
+}
+
+.box4 {
+    background: purple;
+    font-size: calc(2 * var(--text-font));
+    height: calc(1.6 * var(--boxHeight));
+    width: calc(1.6 * var(--boxWidth));
+}
+
+.box5 {
+    background: orange;
+    font-size: var(--text-font);
+    height: var(--boxHeight);
+    width: var(--boxWidth);
+}
