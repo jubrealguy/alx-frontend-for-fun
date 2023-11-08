@@ -632,7 +632,10 @@
     padding: 0 0 .5rem;
   }
 
-  
+  .button-primary:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+  }
 
   input[type="text"], input[type="email"], textarea {
     position: relative;
