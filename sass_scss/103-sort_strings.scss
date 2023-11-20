@@ -1,3 +1,16 @@
 @import '103-sort_list';
 
-@debug $list_to_sort;
+$sorted-list-str: "";
+@each $name in $list_to_sort {
+	$sorted-list-str: $sorted-list-str + $name + " ";
+}
+
+$sorted-list: ();
+@for $i from 1 through 1{
+	$char: str-slice($sorted-list-str, 1);
+	@if $char != " " {
+		$sorted-list: append($sorted-list, $char);
+	}
+}
+
+@debug "#{$sorted-list}";
